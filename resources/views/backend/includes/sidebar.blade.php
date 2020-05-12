@@ -56,6 +56,9 @@
                 </a>
             </li>
             @endauth
+
+
+
             @permission('edit-settings')
             <li class="{{ active_class(Active::checkUriPattern('admin/settings*')) }}">
                 <a href="{{ route('admin.settings.edit', 1 ) }}">
